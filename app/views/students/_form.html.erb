@@ -36,19 +36,31 @@
     <%= form.number_field :desired_pay, id: :student_desired_pay %>
   </div>
 
-  <div class="field">
-    <%= form.label :part_time %>
-    <%= form.number_field :part_time, id: :student_part_time %>
+  <div class="form-group">
+    <p>Are you interested in Part Time work?</p>
+    <%= form.radio_button :part_time, 'not_interested' %>
+    <%= form.label :part_time, 'Not_interested' %>
+
+    <%= form.radio_button :part_time, 'interested' %>
+    <%= form.label :part_time, 'Interested' %>
   </div>
 
-  <div class="field">
-    <%= form.label :full_time %>
-    <%= form.number_field :full_time, id: :student_full_time %>
+  <div class="form-group">
+    <p>Are you interested in Full Time work?</p>
+    <%= form.radio_button :full_time, 'not_interested_in' %>
+    <%= form.label :full_time, 'Not_interested' %>
+
+    <%= form.radio_button :full_time, 'interested_in' %>
+    <%= form.label :full_time, 'Interested' %>
   </div>
 
-  <div class="field">
-    <%= form.label :contract_work %>
-    <%= form.number_field :contract_work, id: :student_contract_work %>
+  <div class="form-group">
+    <p>Are you interested in Contract Work?</p>
+    <%= form.radio_button :contract_work, 'yes_interested' %>
+    <%= form.label :contract_work, 'Interested' %>
+
+    <%= form.radio_button :contract_work, 'no_not_interested' %>
+    <%= form.label :contract_work, 'Not_interested' %>
   </div>
 
   <div class="field">

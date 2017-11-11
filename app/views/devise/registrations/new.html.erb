@@ -21,6 +21,24 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+  <div class="form-group">
+    <p>Are you a student?</p>
+    <%= f.radio_button :studentstatus, 'student' %>
+    <%= f.label :studentstatus, 'Yes' %>
+
+    <%= f.radio_button :studentstatus, 'non_student' %>
+    <%= f.label :studentstatus, 'No' %>
+  </div>
+
+  <div class="form-group">
+    <p>Are you an Employer?</p>
+    <%= f.radio_button :studentstatus, 'employer' %>
+    <%= f.label :studentstatus, 'Yes' %>
+
+    <%= f.radio_button :studentstatus, 'non_student' %>
+    <%= f.label :studentstatus, 'No' %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>

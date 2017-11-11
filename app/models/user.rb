@@ -12,4 +12,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  enum studentstatus: { non_student: 0, student: 1, employer: 2 }
+  validates_presence_of :email
+
+  
+
 end

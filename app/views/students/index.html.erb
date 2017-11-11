@@ -39,5 +39,7 @@
 </table>
 
 <br>
-
+<% if current_user.studentstatus == "student" %>
 <%= link_to 'New Student', new_student_path %>
+
+<% end %>
