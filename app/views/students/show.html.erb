@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Project links:</strong>
+  <%= @student.project_links %>
+</p>
+
+<p>
+  <strong>Contact email:</strong>
+  <%= @student.contact_email %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @student.profile %>
+</p>
+
+<p>
+  <strong>Desired pay:</strong>
+  <%= @student.desired_pay %>
+</p>
+
+<p>
+  <strong>Part time:</strong>
+  <%= @student.part_time %>
+</p>
+
+<p>
+  <strong>Full time:</strong>
+  <%= @student.full_time %>
+</p>
+
+<p>
+  <strong>Contract work:</strong>
+  <%= @student.contract_work %>
+</p>
+
+<p>
+  <strong>Skills:</strong>
+  <%= @student.skills %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
